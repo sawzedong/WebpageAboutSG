@@ -92,3 +92,28 @@ img {vertical-align: middle;}
   from {opacity: .6} 
   to {opacity: 1}
 }
+
+/*Other parts of the webpage*/
+html {
+    background-color: #E81300;
+}
+
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #00F56B;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+
+.images {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.welcome {
+    text-align: center;
+}
