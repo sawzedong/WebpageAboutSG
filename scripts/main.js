@@ -1,3 +1,4 @@
+/*Slideshow*/
 var slideIndex = 1;
 showSlides(slideIndex);
 function plusSlides(n) {
@@ -22,4 +23,26 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
+}
+
+/*Welcome message (+ user's name)*/
+//Custom Welcome Message
+var myButton = document.querySelector('.buttona');
+var myHeading = document.querySelector('h1');
+
+function setUserName() {
+  var myName = prompt('Please enter your name.');
+  localStorage.setItem('name', myName);
+  myHeading.innerHTML = 'HEY THERE, ' + myName;
+}
+
+if(!localStorage.getItem('name')) {
+  setUserName();
+} else {
+  var storedName = localStorage.getItem('name');
+  myHeading.innerHTML = 'HEY THERE, ' + storedName;
+}
+
+myButton.onclick = function() {
+  setUserName();
 }
