@@ -1,6 +1,8 @@
 /*Slideshow*/
 var slideIndex = 1;
 showSlides(slideIndex);
+var autonrun;
+autorun = setTimeout(2000,plusSlides,1);
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
@@ -13,7 +15,7 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
+  if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";  
