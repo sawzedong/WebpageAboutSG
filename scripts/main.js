@@ -2,7 +2,7 @@
 var slideIndex = 1;
 showSlides(slideIndex);
 var autonrun;
-autorun = setInterval(plusSlides,2000,1);
+autorun = setInterval(plusSlides,5000,1);
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
