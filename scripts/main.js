@@ -2,7 +2,7 @@
 var slideIndex = 1;
 showSlides(slideIndex);
 var autonrun;
-autorun = setTimeout(2000,plusSlides,1);
+autorun = setTimeout(plusSlides,2000,1);
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
