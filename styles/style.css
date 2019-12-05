@@ -120,5 +120,7 @@ body {
 }
 .imglinks {
     padding: 0px;
-    font-size: 1px;
+    font-size: 10px;
+    font-family: Verdana;
 }
+
